@@ -233,11 +233,117 @@
       </div>
     </section>
 
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, atque inventore placeat dolorum quibusdam eos.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+
+              <li>
+                <div class="timeline-image" style="background-image: url(img/moscow.jpg);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>5 Mei 2027</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum placeat, explicabo molestias perferendis libero.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>26 April 2029</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, rem earum modi dignissimos eum voluptates numquam a debitis!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>19 Agustus 2030</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta magni inventore at corrupti explicabo placeat deleniti eveniet eius deserunt.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Gallery Foto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, nam.</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a href="img/gallery/1.jpg" data-toggle="lightbox" data-caption="Sultan & Vonny" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/1.jpg" alt="Sultan & Vonny" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a href="img/gallery/2.jpg" data-toggle="lightbox" data-caption="Sultan" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/1.jpg" alt="Sultan" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a href="img/gallery/4.jpg" data-toggle="lightbox" data-caption="Vonny" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/1.jpg" alt="Vonny" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a href="img/gallery/3.jpg" data-toggle="lightbox" data-caption="Sultan 2" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/1.jpg" alt="Sultan 2" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+
+          <div class="col mt-3">
+            <a href="img/gallery/5.jpg" data-toggle="lightbox" data-caption="Vonny 2" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/1.jpg" alt="Vonny 2" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
     <script>
       simplyCountdown(".simply-countdown", {
@@ -253,6 +359,20 @@
           seconds: { singular: "detik", plural: "detik" },
         },
       });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector('.sticky-top')
+      const offcanvas = document.querySelector('.offcanvas')
+
+      offcanvas.addEventListener('show.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'visible'
+      })
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'hidden'
+      })
+
     </script>
   </body>
 </html>
