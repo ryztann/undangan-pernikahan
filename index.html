@@ -37,11 +37,11 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
         <h1>Sultan & Vonny</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
@@ -167,6 +167,9 @@
               Alamat: Gedung Selecta, RS Columbia Asia Medan. <br />
               Jl. Listrik No.2, Petisah Tengah, Kec. Medan Petisah, Kota Medan
             </p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15928.039773608627!2d98.6774031!3d3.5851911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cc1aeacc41%3A0x73024848cf1b2023!2sSelecta!5e0!3m2!1sid!2sid!4v1693977332889!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             <a
               href="https://goo.gl/maps/J4qPjJqygDh8vgZc6"
               target="_blank"
@@ -337,6 +340,131 @@
       </div>
     </section>
 
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form dibawah ini untuk melakukan konfimasi Kehadiran.</p>
+          </div>
+        </div>
+        
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"  method="POST" 
+        action="https://script.google.com/macros/s/AKfycbyMi3d_7oG37s1EgE6V7limCZh4VYbAW79jVWzlzojpc7b2ODJy1WK6tI5sufGg4LP-/exec" id="my-form">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" >
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            </div>
+         </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px;">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+        
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+              <script>
+                  /**
+                  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                  /*
+                  var disqus_config = function () {
+                  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                  };
+                  */
+                  (function() { // DON'T EDIT BELOW THIS LINE
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://undangan-pernikahan-yt5pjvj049.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sint. Explicabo inventore architecto dolorem aspernatur.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div> 
+                8645288498 - RIZKY SULTAN ABDULLAH
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">DANA</div> 
+                085834175263 - RIZKY SULTAN ABDULLAH
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">QRIS</div> 
+                <img src="img/qris.png" alt="QRIS" class="img-thumbnail" width="150">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2023 S&V Wedding. All RIghts Reserved.</small>
+            <small class="block">Design by <a href="https://instagram.com/ryztann">@rizkysultan</a></small>
+
+            <ul class="mt-3">
+              <li><a href="https://www.instagram.com/ryztann/"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/webprogrammingunpas"><i class="bi bi-youtube"></i></a></li>
+              <li><a href="https://twitter.com/RizkyySultann"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://facebook.com/hondazt"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://github.com/ryztann"><i class="bi bi-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/Bruno Bertone Kenny J. Charles - Nothing's Gonna Change My Love for You..mp3" type="audio/mp3">
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none;">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -373,6 +501,88 @@
         stickyTop.style.overflow = 'hidden'
       })
 
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root")
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper")
+      const audioIcon = document.querySelector('.audio-icon-wrapper i')
+      const song = document.querySelector('#song')
+      let isPlaying = false
+
+      function disableScroll() {
+         scrollTop = window.pageYOffset || document.documentElement.scrollTop
+         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft)
+        }
+
+        
+        rootElement.style.scrollBehavior = 'auto'
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {}
+        rootElement.style.scrollBehavior = 'smooth'
+        // localStorage.setItem('opened', 'true')
+        playAudio()
+      }
+
+      function playAudio() {
+        song.volume = 0.1
+        audioIconWrapper.style.display = 'flex'
+        song.play()
+        isPlaying = true
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause()
+          audioIcon.classList.remove('bi-disc')
+          audioIcon.classList.add('bi-pause-circle')
+        } else {
+          song.play()
+          audioIcon.classList.add('bi-disc')
+          audioIcon.classList.remove('bi-pause-circle')
+        }
+
+        isPlaying = !isPlaying
+      }
+
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll()
+      // }
+      disableScroll()
+    </script>
+
+    <script>
+      window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          })
+        });
+      });
+
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search)
+      const nama = urlParams.get('n') || ''
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i'
+      const namaContainer = document.querySelector('.hero h4 span')
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',')
+
+      document.querySelector('#nama').value = nama
     </script>
   </body>
 </html>
